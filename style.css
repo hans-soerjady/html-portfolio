@@ -132,7 +132,7 @@ body {
     width: 40%;
     text-align: left;
     padding-left: 100px;
-    font-size: 44px;
+    font-size: 36px;
     letter-spacing: 5px;
 }
 
@@ -142,7 +142,7 @@ body {
     width: 60%;
     display: flex;
     justify-content: space-evenly;
-    font-size: 30px;
+    font-size: 24px;
     letter-spacing: 1px;
 }
 
@@ -168,7 +168,6 @@ header {
 header>img {
     border-radius: 3px;
     object-fit: cover;
-    width: 350px;
 }
 
 #headerp1 {
@@ -184,7 +183,7 @@ header>img {
     color: rgb(255, 255, 255);
     width: 100%;
     font-family: "Archivo Black";
-    font-size: 35px;
+    font-size: 22px;
     letter-spacing: 2px;
 }
 
@@ -194,7 +193,7 @@ header>img {
     color: rgb(204, 204, 204);
     width: 90%;
     font-family: "Nunito Regular";
-    font-size: 24px;
+    font-size: 18px;
 }
 
 /* CSS buat main-section index.html */
@@ -205,12 +204,12 @@ header>img {
     margin-bottom: 50px;
     color: white;
     font-family: "Nunito Regular";
-    font-size: 36px;
+    font-size: 24px;
 }
 
 .index-main-item {
-    width: 90%;
-    height: 600px;
+    width: 80%;
+    height: 400px;
     margin: auto;
     margin-bottom: 100px;
     border: 3px solid gray;
@@ -292,7 +291,7 @@ header>img {
     width: 100%;
     /* background-color: gray; */
     color: white;
-    font-size: 60px;
+    font-size: 40px;
     justify-content: center;
     flex-direction: column;
     margin-bottom: 70px;
@@ -304,7 +303,7 @@ header>img {
 
 #works-header>p {
     color: rgb(171, 171, 171);
-    font-size: 24px;
+    font-size: 18px;
     text-align: center;
 }
 
@@ -335,7 +334,7 @@ header>img {
     width: 100%;
     /* background-color: gray; */
     color: white;
-    font-size: 60px;
+    font-size: 40px;
     justify-content: center;
     flex-direction: column;
     margin-bottom: 70px;
@@ -347,7 +346,7 @@ header>img {
 
 #experiments-header>p {
     color: rgb(171, 171, 171);
-    font-size: 24px;
+    font-size: 18px;
     text-align: center;
 }
 
@@ -384,14 +383,14 @@ header>img {
 #footer-section h5 {
     font-family: Teko;
     color: rgb(241, 241, 241);
-    font-size: 46px;
+    font-size: 32px;
     text-align: center;
     letter-spacing: 2px;
 }
 
 #footer-links>p>a {
     font-family: Teko;
-    font-size: 38px;
+    font-size: 24px;
     color: rgb(185, 185, 185);
 }
 
@@ -421,11 +420,11 @@ header>img {
 }
 
 #footer-contacts>h5 {
-    font-size: 36px;
+    font-size: 24px;
 }
 
 #footer-contacts p {
-    font-size: 22px;
+    font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 50px;
     color: rgb(185, 185, 185);
