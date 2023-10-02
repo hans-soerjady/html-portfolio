@@ -1,0 +1,438 @@
+@font-face {
+    font-family: "Teko";
+    src: url("https://db.onlinewebfonts.com/t/1769cbf3b0514c7fad86318143c7ab6e.eot");
+    src: url("https://db.onlinewebfonts.com/t/1769cbf3b0514c7fad86318143c7ab6e.eot?#iefix")format("embedded-opentype"),
+        url("https://db.onlinewebfonts.com/t/1769cbf3b0514c7fad86318143c7ab6e.woff2")format("woff2"),
+        url("https://db.onlinewebfonts.com/t/1769cbf3b0514c7fad86318143c7ab6e.woff")format("woff"),
+        url("https://db.onlinewebfonts.com/t/1769cbf3b0514c7fad86318143c7ab6e.ttf")format("truetype"),
+        url("https://db.onlinewebfonts.com/t/1769cbf3b0514c7fad86318143c7ab6e.svg#Teko")format("svg");
+}
+
+@font-face {
+    font-family: "Nunito Regular";
+    src: url("https://db.onlinewebfonts.com/t/13c84759e88a1d95d1c6849a108197f9.eot");
+    src: url("https://db.onlinewebfonts.com/t/13c84759e88a1d95d1c6849a108197f9.eot?#iefix")format("embedded-opentype"),
+        url("https://db.onlinewebfonts.com/t/13c84759e88a1d95d1c6849a108197f9.woff2")format("woff2"),
+        url("https://db.onlinewebfonts.com/t/13c84759e88a1d95d1c6849a108197f9.woff")format("woff"),
+        url("https://db.onlinewebfonts.com/t/13c84759e88a1d95d1c6849a108197f9.ttf")format("truetype"),
+        url("https://db.onlinewebfonts.com/t/13c84759e88a1d95d1c6849a108197f9.svg#Nunito Regular")format("svg");
+}
+
+@font-face {
+    font-family: "Archivo Black";
+    src: url("https://db.onlinewebfonts.com/t/35e35f786814276d49e538db3743bead.eot");
+    src: url("https://db.onlinewebfonts.com/t/35e35f786814276d49e538db3743bead.eot?#iefix")format("embedded-opentype"),
+        url("https://db.onlinewebfonts.com/t/35e35f786814276d49e538db3743bead.woff2")format("woff2"),
+        url("https://db.onlinewebfonts.com/t/35e35f786814276d49e538db3743bead.woff")format("woff"),
+        url("https://db.onlinewebfonts.com/t/35e35f786814276d49e538db3743bead.ttf")format("truetype"),
+        url("https://db.onlinewebfonts.com/t/35e35f786814276d49e538db3743bead.svg#Archivo Black")format("svg");
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+a:link,
+a:visited {
+    text-decoration: none;
+}
+
+a:visited {
+    color: inherit;
+}
+
+.font-bold {
+    font-weight: bold;
+}
+
+.white-bar {
+    background-color: white;
+    color: white;
+    width: 100px;
+    height: 2px;
+}
+
+#loader {
+    /* background-color: rgb(255, 255, 255); */
+    border: 16px solid gray;
+    border-top: 16px solid white;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 1.5s linear infinite;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.animate-bottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 2s;
+    animation-name: animatebottom;
+    animation-duration: 2s;
+}
+
+@-webkit-keyframes animatebottom {
+    from {
+        bottom: -100px;
+        opacity: 0
+    }
+
+    to {
+        bottom: 0px;
+        opacity: 1
+    }
+}
+
+@keyframes animatebottom {
+    from {
+        bottom: -100px;
+        opacity: 0
+    }
+
+    to {
+        bottom: 0;
+        opacity: 1
+    }
+}
+
+body {
+    background-color: rgb(30, 30, 30);
+}
+
+#navbar {
+    width: 100%;
+    height: 8vh;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    color: rgb(242, 242, 242);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid gray;
+}
+
+#navbarh2 {
+    /* background-color: aqua; */
+    font-family: Teko;
+    width: 40%;
+    text-align: left;
+    padding-left: 100px;
+    font-size: 44px;
+    letter-spacing: 5px;
+}
+
+#navbarbtn {
+    /* background-color: aliceblue; */
+    font-family: "Teko";
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+
+#navbarbtn>a {
+    transition: 0.3s;
+    opacity: 1;
+}
+
+#navbarbtn>a:hover {
+    opacity: 0.4;
+    cursor: pointer;
+}
+
+header {
+    /* background-color: rgb(104, 104, 104); */
+    width: 72%;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+}
+
+header>img {
+    border-radius: 3px;
+    object-fit: cover;
+    width: 350px;
+}
+
+#headerp1 {
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 50px;
+    margin-left: 30px;
+}
+
+.header-p1 {
+    color: rgb(255, 255, 255);
+    width: 100%;
+    font-family: "Archivo Black";
+    font-size: 35px;
+    letter-spacing: 2px;
+}
+
+#header-p2 {
+    margin-top: 40px;
+    margin-left: 10px;
+    color: rgb(204, 204, 204);
+    width: 90%;
+    font-family: "Nunito Regular";
+    font-size: 24px;
+}
+
+/* CSS buat main-section index.html */
+#index-main-section {
+    width: 100%;
+    height: fit-content;
+    /* background-color: rgb(85, 85, 85); */
+    margin-bottom: 50px;
+    color: white;
+    font-family: "Nunito Regular";
+    font-size: 36px;
+}
+
+.index-main-item {
+    width: 90%;
+    height: 600px;
+    margin: auto;
+    margin-bottom: 100px;
+    border: 3px solid gray;
+    border-radius: 8px;
+}
+
+
+/* CSS buat main-section about.html */
+#about-main-section {
+    /* background-color: rgb(8, 68, 68); */
+    width: 60%;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: row;
+}
+
+#about-main-section>#main-area {
+    width: 65%;
+}
+
+#about-main-section>#side-area {
+    width: 35%;
+    margin-left: 10%;
+}
+
+#about-main-section h5 {
+    font-family: Teko;
+    font-size: 22px;
+    letter-spacing: 3px;
+    color: rgb(201, 201, 201);
+}
+
+#about-main-section p {
+    font-size: 18px;
+    font-family: "Nunito Regular";
+    text-align: justify;
+    color: white;
+}
+
+#about-main-section>#side-area>h5 {
+    margin-bottom: 10px;
+}
+
+#about-main-section>#side-area>p {
+    line-height: 36px;
+}
+
+#about-main-section button {
+    font-family: Teko;
+    font-size: 30px;
+    margin-top: 30px;
+    border: none;
+    border-bottom: 2px solid gray;
+    background-color: transparent;
+    color:rgb(248, 248, 248);
+    opacity: 1;
+    transition: 0.3s;
+    letter-spacing: 1px;
+}
+
+#about-main-section button:hover {
+    opacity: 0.4;
+    cursor: pointer;
+}
+
+/* CSS BACKGROUND VIDEO WORKS - EXPERIMENTS */
+#background-video {
+    width: 100%;
+    filter: opacity(0.4);
+    position: absolute;
+    z-index: -1;
+}
+
+/* CSS WORKS */
+#works-header {
+    display: flex;
+    width: 100%;
+    /* background-color: gray; */
+    color: white;
+    font-size: 60px;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 70px;
+}
+
+#works-header>h2 {
+    margin: auto;
+}
+
+#works-header>p {
+    color: rgb(171, 171, 171);
+    font-size: 24px;
+    text-align: center;
+}
+
+#works-main-section {
+    background-color: rgb(212, 212, 212);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    padding-top: 20px;
+    color: rgb(30, 30, 30);
+    font-size: 24px;
+}
+
+#works-main-section>div {
+    border: 2px solid rgb(30, 30, 30);
+    border-radius: 6px;
+    width: 90%;
+    height: 300px;
+    margin-bottom: 30px;
+}
+
+/* CSS EXPERIMENTS */
+#experiments-header {
+    display: flex;
+    width: 100%;
+    /* background-color: gray; */
+    color: white;
+    font-size: 60px;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 70px;
+}
+
+#experiments-header>h2 {
+    margin: auto;
+}
+
+#experiments-header>p {
+    color: rgb(171, 171, 171);
+    font-size: 24px;
+    text-align: center;
+}
+
+#experiments-main-section {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+    margin-top: 100px;
+    /* margin-bottom: 100px; */
+    color: white;
+    font-size: 24px;
+}
+
+#experiments-main-section>div {
+    border: 2px solid gray;
+    border-radius: 6px;
+    width: 100%;
+    height: 200px;
+    margin-bottom: 30px;
+}
+
+/* FOOTER SECTION CSS */
+#footer-section {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 2px solid gray;
+    padding: 30px 50px 30px 50px;
+    background-color: rgb(30, 30, 30);
+}
+
+#footer-section h5 {
+    font-family: Teko;
+    color: rgb(241, 241, 241);
+    font-size: 46px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+#footer-links>p>a {
+    font-family: Teko;
+    font-size: 38px;
+    color: rgb(185, 185, 185);
+}
+
+#footer-links {
+    display: flex;
+    flex-direction: column;
+}
+
+#footer-links>p {
+    word-spacing: 80px;
+    letter-spacing: 2px;
+}
+
+
+#footer-section a {
+    transition: 0.3s;
+    opacity: 1;
+}
+
+#footer-section a:hover {
+    opacity: 0.4;
+    cursor: pointer;
+}
+
+#footer-contacts {
+    margin-top: 50px;
+}
+
+#footer-contacts>h5 {
+    font-size: 36px;
+}
+
+#footer-contacts p {
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 50px;
+    color: rgb(185, 185, 185);
+    word-spacing: 10px;
+}
+
+#footer-contacts a {
+    color: rgb(185, 185, 185);
+    letter-spacing: 1px;
+}
